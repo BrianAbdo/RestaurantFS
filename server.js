@@ -33,7 +33,7 @@ app.use(function(req,res,next){
 
 //hi 
 
-  app.listen(port, () => {
+  app.listen(process.env.PORT || port, () => {
     console.log(`App listening on PORT ${port}`);
   });
   
